@@ -1,0 +1,108 @@
+{% extends "restaurant/base.html" %}
+{% block main_content %}
+    <header class="detail">
+        <a href="{% url "index" %}" class="back" data-transition="slide-from-top">
+            <h1>back</h1>
+        </a>
+        <section>
+            <h3 class="badge">Menu</h3>
+            <h1>What&#039;s cooking</h1>
+        </section>
+    </header>
+    <!-- end header -->
+    <div class="content-wrap">
+        <div class="content">
+            <i class="icon bg icon-Food"></i>
+            <section>
+                <header class="with-subnav">
+                    <ul>
+                        <li class="btn active">
+                            <a href="{% url "bar_menu_index" %}" data-transition="slide-left">
+                                <h4>Bar Menu</h4>
+                            </a>
+                        </li>
+                        <li class="btn ">
+                            <a href="{% url "wines_index" %}" data-transition="slide-left">
+                                <h4>Wines</h4>
+                            </a>
+                        </li>
+                        <li class="btn ">
+                            <a href="{% url "dinner_index" %}" data-transition="slide-left">
+                                <h4>Dinner</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+
+                <!-- menu content -->
+                <header>
+                    <h3 class="badge">• starters •</h3>
+                </header>
+
+                <ul class="price-list">
+                    <li>
+                        <div class="top">
+                            <h3 class="title">BLACK KALE CAESAR</h3>
+                            <h4 class="price badge">$ 10.0</h4>
+                        </div>
+                        <p class="description">lacinato, white anchovies, parmesan, fried bread</p>
+                    </li>
+                    <li>
+                        <div class="top">
+                            <h3 class="title">*LOCAL STRIPED BASS CRUDO</h3>
+                            <h4 class="price badge">$ 10.0</h4>
+                        </div>
+                        <p class="description">gooseberries, rhubarb, chilies, smoked balsamic gastrique</p>
+                    </li>
+                    <li>
+                        <div class="top">
+                            <h3 class="title">CHICORY SALAD</h3>
+                            <h4 class="price badge">$ 10.0</h4>
+                        </div>
+                        <p class="description">North Tabor Farm greens, candied hazelnuts, tarragon, pecorino</p>
+                    </li>
+                    <li>
+                        <div class="top">
+                            <h3 class="title">BRAISED PORK BELLY</h3>
+                            <h4 class="price badge">$ 10.0</h4>
+                        </div>
+                        <p class="description">miso, honshimejis, celeriac, tonnato, local arugula</p>
+                    </li>
+                    <li>
+                        <div class="top">
+                            <h3 class="title">STUFFED SQUID</h3>
+                            <h4 class="price badge">$ 10.0</h4>
+                        </div>
+                        <p class="description">shrimp, risotto, rapini, smoked tomato, lemon, anchoiade</p>
+                    </li>
+                    <li>
+                        <div class="top">
+                            <h3 class="title">*BEEF TARTARE</h3>
+                            <h4 class="price badge">$ 10.0</h4>
+                        </div>
+                        <p class="description">scapers, local egg, curry, dill, garlic</p>
+                    </li>
+                </ul>
+
+                <aside class="notice">
+                    <h3>RECOMMENDED</h3>
+                    <h4>CHEF’S SIX COURSE-TASTING MENU</h4>
+                    <p>Changes daily with availability & seasonality</p>
+                </aside>
+
+                <!-- end menu content -->
+            </section>
+        </div>
+    </div>
+
+    <div data-remodal-id="modal">
+        <i class="icon bg icon-CommentwithLines"></i>
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1></h1>
+        <p>
+        <div class="signature center">
+            <h6>-CHEF-</h6>
+            <h5>Hal Ryerson</h5>
+        </div>
+    </div>
+{% endblock %}

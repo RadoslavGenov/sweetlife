@@ -1,0 +1,144 @@
+{% extends "restaurant/base.html" %}
+{% block main_content %}
+<!-- The header for content -->
+            <header class="detail">
+                <a href="{% url "index" %}" class="back" data-transition="slide-from-top">
+                    <h1>back</h1>
+                </a>
+                <section>
+                    <h3 class="badge">stories</h3>
+                    <h1>Stories &amp; Taste</h1>
+                </section>
+            </header>
+            <!-- end header -->
+            <div class="content-wrap">
+                <div class="content">
+                    <i class="icon bg icon-CommentwithLines"></i>
+                    <section>
+                        <header>
+                            <h2>Dessert special tonight</h2>
+                            <h4 class="serif">• 02 August •</h4>
+                        </header>
+
+                        <p>almond financier, pears roasted in embers, bay leaf crumble, local wild rose hip syrup......</p>
+
+                        <figure>
+
+                            <a href="../assets/img/stories/1.jpg" class="gallery-item">
+                                <img src="../assets/img/stories/1.jpg" alt="almond financier">
+
+                                <figcaption>
+                                    <h3>almond financier</h3>
+                                    <p class="serif">Dessert Special tonight</p>
+                                    <i class="icon icon-Plus"></i>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <blockquote>
+                            <p>"It&#039;s like tasting a slice of heaven"</p>
+                        </blockquote>
+
+
+                        <header>
+                            <h2>The first of August on Martha's Vineyard</h2>
+                            <h4 class="serif">• 01 August •</h4>
+                        </header>
+
+                        <p>Quick break from picking some wild nettles for dinner service.... a relaxing way to start august.. </p>
+
+                        <figure>
+
+                            <a href="../assets/img/stories/2.jpg" class="gallery-item">
+                                <img src="../assets/img/stories/2.jpg" alt="First of August">
+
+                                <figcaption>
+                                    <h3>Martha's Vineyard</h3>
+                                    <p class="serif">Lovely View</p>
+                                    <i class="icon icon-Plus"></i>
+                                </figcaption>
+                            </a>
+                        </figure>
+
+                        <header>
+                            <h2>Loretta is a Multitasker</h2>
+                            <h4 class="serif">• 23 July •</h4>
+                        </header>
+
+                        <p></p>
+
+                        <figure>
+
+                            <a href="../assets/img/stories/3.jpg" class="gallery-item">
+                                <img src="../assets/img/stories/3.jpg" alt="Loretta">
+
+                                <figcaption>
+                                    <h3>Loretta</h3>
+                                    <p class="serif"></p>
+                                    <i class="icon icon-Plus"></i>
+                                </figcaption>
+                            </a>
+                        </figure>
+
+                        <header>
+                            <h2>Bass crudo - arguing with perfection</h2>
+                            <h4 class="serif">• 23 July •</h4>
+                        </header>
+
+                        <p>Local striped bass crudo, charred local onions, gooseberries, fennel, pickled peppers, local sea beans. Island fresh crudo always on the menu. </p>
+
+                        <figure>
+
+                            <a href="../assets/img/stories/4.jpg" class="gallery-item">
+                                <img src="../assets/img/stories/4.jpg" alt="Bass Crudo">
+
+                                <figcaption>
+                                    <h3>Local striped bass crudo</h3>
+                                    <p class="serif"></p>
+                                    <i class="icon icon-Plus"></i>
+                                </figcaption>
+                            </a>
+                        </figure>
+
+                        <header>
+                            <h2>Just a demo</h2>
+                            <h4 class="serif">• 17-th of September 1996 •</h4>
+                        </header>
+
+                        <p>Llazi was born</p>
+
+                        <figure>
+
+                            <a href="../assets/img/stories/demo.jpg" class="gallery-item">
+                                <img src="../assets/img/stories/demo.jpg" alt="Bass Crudo">
+
+                                <figcaption>
+                                    <h3>Local striped bass crudo</h3>
+                                    <p class="serif"></p>
+                                    <i class="icon icon-Plus"></i>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </section>
+                </div>
+            </div>
+            <!-- Block footer with signature and share links -->
+            <footer class="overlay-dark">
+                <div class="content">
+                    <div class="signature">
+                        <h6>Written by.</h6>
+                        <h5>Erin Ryerson</h5>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer -->
+            <div data-remodal-id="modal">
+                <i class="icon bg icon-CommentwithLines"></i>
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1></h1>
+                <p>
+                <div class="signature center">
+                    <h6>-CHEF-</h6>
+                    <h5>Hal Ryerson</h5>
+                </div>
+            </div>
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "restaurant/base.html" %}
+{% block main_content %}
+    <header>
+            <a href="." class="logo">
+                <h1>Restaurant</h1>
+                <img src="../../static/img/logo/logo.svg" alt="Restaurant">
+            </a>
+        </header>
+        <!-- The navigation -->
+        <nav class="strokes">
+            <ul id="navigation">
+                <li>
+                    <a href="{% url "about_index" %}" data-transition="slide-to-top">
+                        <section>
+                            <h1>About</h1>
+                            <h5 class="badge-rounded">Something about us</h5>
+                        </section>
+                        <footer>
+                            <i class="icon icon-CommentwithLines"></i>
+                            <h5 class="serif">Our story</h5>
+                            <p>Read more</p>
+                        </footer>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "menu_index" %}" data-transition="slide-to-top">
+                        <section>
+                            <h1>Menu</h1>
+                            <h5 class="badge-rounded">Our delicious dishes</h5>
+                        </section>
+                        <footer>
+                            <i class="icon icon-Food"></i>
+                            <h5 class="serif">Our kitchen</h5>
+                            <p>Dishes and drinks</p>
+                        </footer>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "stories_index" %}" data-transition="slide-to-top">
+                        <section>
+                            <h1>Stories</h1>
+                            <h5 class="badge-rounded">Our stories</h5>
+                        </section>
+                        <footer>
+                            <i class="icon icon-CreateNew"></i>
+                            <h5 class="serif">News</h5>
+                            <p>And stories</p>
+                        </footer>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "reservation_index" %}" data-transition="slide-to-top">
+                        <section>
+                            <h1>Reservations</h1>
+                            <h5 class="badge-rounded">Happy dining</h5>
+                        </section>
+                        <footer>
+                            <i class="icon icon-Users"></i>
+                            <h5 class="serif">Join us</h5>
+                            <p>On a nice evening</p>
+                        </footer>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "contact_index" %}" data-transition="slide-to-top">
+                        <section>
+                            <h1>Contact</h1>
+                            <h5 class="badge-rounded">Get in touch?</h5>
+                        </section>
+                        <footer>
+                            <i class="icon icon-LocationMarker"></i>
+                            <h5 class="serif">Leave us</h5>
+                            <p>A message</p>
+                        </footer>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End navigation -->
+        <div class="overlay"></div>
+        <div data-remodal-id="modal">
+            <i class="icon bg icon-CommentwithLines"></i>
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h1></h1>
+            <p>
+            <div class="signature center">
+                <h6>-CHEF-</h6>
+                <h5>Pierre Gabant</h5>
+            </div>
+        </div>
+{% endblock %}

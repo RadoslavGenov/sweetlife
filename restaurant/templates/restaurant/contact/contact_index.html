@@ -1,0 +1,98 @@
+{% extends "restaurant/base.html" %}
+{% block main_content %}
+    <!-- The header for content -->
+    <header class="detail">
+        <a href="{% url "index" %}" class="back" data-transition="slide-from-top">
+            <h1>back</h1>
+        </a>
+        <section>
+            <h3 class="badge">Contact</h3>
+            <h1>Leave us a message</h1>
+        </section>
+    </header>
+    <!-- end header -->
+    <div class="content-wrap">
+        <section class="content">
+            <i class="icon bg icon-LocationMarker"></i>
+            <section class="info">
+                <ul class="icon-list">
+                    <li>
+                        <a href="#">
+                            <i class="icon icon-LocationMarker"></i>
+                            <span>{{ contacts.address }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:508 696 0200">
+                            <i class="icon icon-Phone"></i>
+                            <span>{{ contacts.number }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:hal.ryerson@gmail.com">
+                            <i class="icon icon-Email"></i>
+                            <span>{{ contacts.email }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fb.com/The-Sweet-Life-Cafe-246711998888/">
+                            <i class="icon icon-social facebook"></i>
+                            <span>{{ contacts.facebook }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="instagram.com/sweet_life_cafe_mv/">
+                            <i class="icon icon-social instagram"></i>
+                            <span>{{ contacts.instagram }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="hours">
+                <header>
+                    <h2>Opening hours</h2>
+                </header>
+                <p>Serving food every day starting 5:30 until 10:00</p>
+            </section>
+            <section class="form-inline">
+                <header>
+                    <h2>Message</h2>
+                    <h4 class="serif">We'd like to hear from you!</h4>
+                </header>
+                <form action="." method="post">
+                    {{ form.as_p }}
+                    {% csrf_token %}
+                    <input type="submit" value="send e-mail">
+                </form>
+                <!--<form action="contact.php" method="post" id="contact-form" class="form ambiance-html-form">
+                    <div class="row">
+                        <div class="form-group">
+                            <input name="name" type="text" placeholder="name">
+                            <i class="icon icon-User"></i>
+                        </div>
+                        <div class="form-group">
+                            <input class="full-border" name="email" id="email" type="email" placeholder="email">
+                            <i class="icon icon-Email"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="10" cols="40" required="required" name="message" id="body" placeholder="message"></textarea>
+                        <i class="icon icon-Typing"></i>
+                    </div>
+                    <span class="message"><strong>Status.</strong> idle</span>
+                    <div class="submit">
+                        <button type="submit" value="submit">-->
+            </section>
+        </section>
+    </div>
+    <div data-remodal-id="modal">
+        <i class="icon bg icon-CommentwithLines"></i>
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>Thank you!</h1>
+        <p>We will get back to you as soon as possible!</p>
+        <div class="signature center">
+            <h6>-CHEF-</h6>
+            <h5>Hal Ryerson</h5>
+        </div>
+    </div>
+{% endblock %}

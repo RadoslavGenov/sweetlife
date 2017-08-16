@@ -1,0 +1,68 @@
+{% extends "restaurant/base.html" %}
+{% block main_content %}
+    <!-- The header for content -->
+    <header class="detail">
+        <a href="http://sweetlifemv.com" class="back" data-transition="slide-from-top">
+            <h1>back</h1>
+        </a>
+        <section>
+            <h3 class="badge">The story</h3>
+            <h1>About us</h1>
+        </section>
+    </header>
+    <!-- end header -->
+    <div class="content-wrap">
+        <div class="content">
+            <i class="icon bg icon-CommentwithLines"></i>
+            <section>
+                <header>
+                    <h2>{{ about.title_one }}</h2>
+                    <h4 class="serif"></h4>
+                </header>
+
+                <section>
+                    <!--<p>A contemporary island restaurant in a beautifully restored Victorian home. Enjoy modern seasonal
+                        fare in our homey dining room, on our airy porch, at our cocktail bar, or on our romantic
+                        candle-lit garden patio.</p>
+
+                    <p>At the Sweet Life Cafe, we are focused on direct relationships with island farmers and fishermen.
+                        This allows us to showcase the very best the island has to offer and serve it to you in an
+                        enchanting atmosphere.</p>
+
+                    <p>Located at the end of Circuit Avenue in the heart of Oak Bluffs, we are an oasis of refined
+                        dining. Our restaurant has hosted presidents and beach bums with equal aplomb. We strive to make
+                        every visit a truly exceptional dining experience. </p>-->
+
+                    <p>{{ about.content_one }}</p>
+                </section>
+
+
+                <header>
+                    <h2>{{ about.title_two }}</h2>
+                </header>
+
+                <section>
+                    <p>{{ about.content_two }}</p>
+                </section>
+
+
+                <footer>
+                    <div class="signature">
+                        <h6>Written by.</h6>
+                        <h5>Erin Ryerson</h5>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </div>
+    <div data-remodal-id="modal">
+        <i class="icon bg icon-CommentwithLines"></i>
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1></h1>
+        <p>
+        <div class="signature center">
+            <h6>-CHEF-</h6>
+            <h5>Hal Ryerson</h5>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "restaurant/base.html" %}
+{% block main_content %}
+    <!-- The header for content -->
+    <header class="detail">
+        <a href="{% url "index" %}" class="back" data-transition="slide-from-top">
+            <h1>back</h1>
+        </a>
+        <section>
+            <h3 class="badge">Menu</h3>
+            <h1>What&#039;s cooking</h1>
+        </section>
+    </header>
+    <!-- end header -->
+    <div class="content-wrap">
+        <div class="content">
+            <i class="icon bg icon-Food"></i>
+            <header class="with-subnav">
+                <ul>
+                    <li class="btn ">
+                        <a href="{% url "bar_menu_index" %}" data-transition="slide-left">
+                            <h4>Bar Menu</h4>
+                        </a>
+                    </li>
+                    <li class="btn">
+                        <a href="{% url "wines_index" %}" data-transition="slide-left">
+                            <h4>Wines</h4>
+                        </a>
+                    </li>
+                    <li class="btn active">
+                        <a href="{% url "dinner_index" %}" data-transition="slide-left">
+                            <h4>Dinner</h4>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <!-- menu content -->
+            <header>
+                <h3 class="badge">• mains •</h3>
+            </header>
+
+            <ul class="price-list">
+                {% for dinner in dinners %}
+                    <li>
+                        <div class="top">
+                            <h3 class="title">{{ dinner.name }}</h3>
+                        </div>
+                        <p class="description">{{ dinner.description }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <aside class="notice">
+                <h3>RECOMMENDED</h3>
+                <h4>CHEF’S SIX COURSE-TASTING MENU</h4>
+                <p>Changes daily with availability & seasonality</p>
+            </aside>
+
+            <!-- end menu content -->
+            </section>
+        </div>
+    </div>
+
+    <div data-remodal-id="modal">
+        <i class="icon bg icon-CommentwithLines"></i>
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1></h1>
+        <p>
+        <div class="signature center">
+            <h6>-CHEF-</h6>
+            <h5>Hal Ryerson</h5>
+        </div>
+    </div>
+    </main>
+    <!-- end of main content -->
+{% endblock %}
