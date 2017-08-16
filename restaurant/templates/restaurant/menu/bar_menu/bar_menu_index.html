@@ -16,6 +16,11 @@
             <i class="icon bg icon-Food"></i>
             <header class="with-subnav">
                 <ul>
+                    <li class="btn ">
+                        <a href="{% url "dinner_index" %}" data-transition="slide-left">
+                        <h4>Dinner</h4>
+                        </a>
+                    </li>
                     <li class="btn active">
                         <a href="{% url "bar_menu_index" %}" data-transition="slide-left">
                             <h4>Bar Menu</h4>
@@ -26,17 +31,12 @@
                             <h4>Wines</h4>
                         </a>
                     </li>
-                    <li class="btn ">
-                        <a href="{% url "dinner_index" %}" data-transition="slide-left">
-                            <h4>Dinner</h4>
-                        </a>
-                    </li>
                 </ul>
             </header>
 
             <!-- menu content -->
             <header>
-                <h3 class="badge">• starters •</h3>
+                <h3 class="badge">• bar menu •</h3>
             </header>
 
             <ul class="price-list">
