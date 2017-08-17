@@ -36,7 +36,6 @@ EMAIL_PORT = 587
 
 INSTALLED_APPS = [
     'restaurant',
-    'solo',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
