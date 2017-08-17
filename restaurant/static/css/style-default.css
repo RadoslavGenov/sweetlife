@@ -3827,3 +3827,35 @@ main .overlay {
 .overlay-alt {
   background-color: rgba(241, 196, 15, 0.5);
 }
+
+
+.extended {
+  width: 98%!important;
+}
+iframe{
+  /*position: absolute;
+  top: -345px;
+  left: -545px;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;*/
+}
+.bookResult{
+  transition: all 0.5s ease-out;
+  position: relative;
+  top: 100px;
+  height: 80%;
+  width: 70%;
+  margin: 0 auto;
+  z-index: 0;
+}
+.shader{
+  transition: all 0.5s ease-out;
+    width: 110%;
+    top: 0;
+    height: 110%;
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999999998;
+}
