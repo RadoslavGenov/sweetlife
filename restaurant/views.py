@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect, render_to_response
 from django.core.mail import send_mail
 from django.template import RequestContext
+from django.views.decorators.csrf import csrf_exempt
 from .forms import EmailPostForm
 from .models import AboutUs, Contact, Pic, Menu
 
-
+@csrf_exempt
 def index(request):
     return render(request, "restaurant/home/main_index.html")
 

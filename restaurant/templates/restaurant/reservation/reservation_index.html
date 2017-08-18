@@ -21,49 +21,31 @@
                 </header>
 
                 <form class="form ambiance-html-form" method="post" id="reservation-form">
-                            <!-- <div class="row">
-                                <div class="form-group">
-                                    <input name="name" id="name" type="text" placeholder="name">
-                                    <i class="icon icon-User"></i>
-                                </div>
-                                <div class="form-group">
-                                    <input class="full-border" name="email" id="email" type="email" placeholder="email">
-                                    <i class="icon icon-Email"></i>
-                                </div>
-                            </div> -->
-                             <div class="row">
-                             <!--       <div class="form-group">
-                                   <input name="phone" id="phone" type="text" placeholder="phone"
-                                    onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) ||
-                                    (event.charCode == 40 || event.charCode == 41 ||event.charCode == 43 || event.charCode == 45 || event.charCode == 32))">
-                                    <i class="icon icon-Phone"></i>
-                                </div>  -->
-                                <div class="form-group extended">
-                                    <input name="seats" id="seats" type="text" placeholder="seats"
-                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                                    <i class="icon icon-Users"></i>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <input name="date" id="date" type="date" placeholder="date">
-                                    <i class="icon icon-Calendar"></i>
-                                </div>
-                                <div class="form-group">
-                                    <input name="time" id="time" type="time" placeholder="time" min="17:30" max="22:00" step="1800">
-                                    <i class="icon icon-Clock"></i>
-                                </div>
-                            </div>
-                            <!-- <div class="form-group">
-                                <textarea rows="4" name="requests" id="requests" placeholder="message"></textarea>
-                                <i class="icon icon-Typing"></i>
-                            </div> -->
-                            <div class="submit">
-                                <button type="submit" value="submit" class="findTable">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="form-group extended">
+                            <input name="seats" id="seats" type="text" placeholder="seats"
+                                   onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            <i class="icon icon-Users"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <input name="date" id="date" type="date" placeholder="date">
+                            <i class="icon icon-Calendar"></i>
+                        </div>
+                        <div class="form-group">
+                            <input name="time" id="time" type="time" placeholder="time" min="17:30" max="22:00"
+                                   step="1800">
+                            <i class="icon icon-Clock"></i>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" value="submit" class="findTable">
                             <i class="icon icon-Forward"></i>
                         </button>
-                            </div>
-                        </form>
+                    </div>
+                </form>
             </section>
         </section>
     </div>
@@ -77,4 +59,34 @@
             <h5>Hal Ryerson</h5>
         </div>
     </div>
+    <script type="application/javascript">
+        $(document).ready(function () {
+            $('.findTable').click(function () {
+                $seats = $('#seats').val();
+                $dateTemp = $('#date').val();
+                $timeTemp = $('#time').val();
+                if (parseInt($timeTemp.substr(0, 2)) > 12) {
+                    $time = parseInt($timeTemp.substr(0, 2) - 12) + $timeTemp.substr(2, 4);
+                } else {
+                    $time = $timeTemp;
+                }
+                $date = $dateTemp.substring(5, 7) + '/' + $dateTemp.substring(8, 10) + '/' + $dateTemp.substring(0, 4);
+                $fwidth = $(window).width() * 7 / 10;
+                $fheight = $(window).width() * 8 / 10;
+
+                $url = "https://opentable.com/restaurant-search.aspx?StartDate=" + $date + "&ResTime=" + $time +
+                    "PM&txtDateFormat=MM/dd/yyyy&RestaurantID=238150&rid=238150&GeoID=7&RestaurantReferralID=238150&PartySize=" + $seats + "&hover=true&wt=true&KeepThis=true&";
+
+                $('.bookResult').html(('<iframe frameborder="0" sandbox="allow-top-navigation allow-forms allow-scripts allow-same-origin" height="' + $fheight + '" width="' + $fwidth + '" src="' + $url + '"></iframe>'));
+                $('.bookResult, .shader, .shader .back').css('display', 'block');
+                $('.bookResult').css('z-index', '99999');
+                $('.shader, .shader .back').css('z-index', '99998');
+
+            });
+            $('.shader .back').click(function () {
+                $('.bookResult, .shader, .shader .back').css('display', 'none');
+                $('.bookResult, .shader, .shader .back').css('z-index', '-1');
+            });
+        })
+    </script>
 {% endblock %}
