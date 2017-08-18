@@ -394,7 +394,7 @@ p {
 h1 {
   font-size: 38px;
   font-size: 3.8rem;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 50px rgba(236, 240, 241, 1.0);
   font-weight: 700;
 }
 h2 {
@@ -432,7 +432,7 @@ ol a {
 /* 2.6: Basic anchor styling and transitions */
 a {
   text-decoration: none;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
 }
 @media only screen and (min-width: 1025px) {
   a {
@@ -440,14 +440,14 @@ a {
     transition: color 1s;
   }
   a:hover {
-    color: #FFFFFF;
+    color: rgba(44, 62, 80,1.0);
   }
 }
 /* 2.7: Serif helper class */
 .serif {
   letter-spacing: 1px;
   font-family: 'merriweather-italic', serif;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
 }
 /* 2.8: Styling for the signature shown in the footer */
 .signature {
@@ -456,7 +456,7 @@ a {
 }
 .signature h6 {
   text-transform: uppercase;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   letter-spacing: 2px;
   margin: 0;
 }
@@ -471,7 +471,7 @@ a {
 }
 /* 2.9: Blockquote styling */
 blockquote {
-  border-left: 2px solid #6c9bae;
+  border-left: 2px solid rgba(241, 196, 15, 1.0);
   margin: 40px 0 40px 30px;
   padding-left: 10px;
   line-height: 1.8;
@@ -479,7 +479,7 @@ blockquote {
 blockquote p {
   font-size: 28px;
   font-size: 2.8rem;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   font-family: 'merriweather-italic', serif;
   letter-spacing: 1px;
   opacity: 1;
@@ -494,14 +494,14 @@ blockquote p {
   padding: .6em 1em;
   border-radius: 1em;
   line-height: 1.1em;
-  background-color: rgba(108, 155, 174, 0.5);
-  color: #FFFFFF;
+  background-color: rgba(241, 196, 15, 0.5);
+  color: rgba(44, 62, 80,1.0);
   margin: 10px 0;
 }
 .badge-rounded {
   display: inline-block;
   padding: .6em .9em;
-  background: rgba(108, 155, 174, 0.5);
+  background: rgba(241, 196, 15, 0.5);
   border-radius: 1em;
 }
 /* 2.11: Styling for the icon show with the date */
@@ -684,7 +684,7 @@ blockquote p {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #6c9bae;
+  background-color: rgba(241, 196, 15, 1.0);
 }
 .icon.bg:before {
   line-height: 60px;
@@ -694,7 +694,7 @@ blockquote p {
   background-color: #FFFFFF;
 }
 .icon.inverted:before {
-  color: #6c9bae;
+  color: rgba(44, 62, 80,1.0);
 }
 .icon:before {
   font-size: 32px;
@@ -717,6 +717,9 @@ blockquote p {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+figcaption .icon:before{
+  color: rgba(44, 62, 80,1.0);
 }
 .icon.icon-Food {
   position: relative;
@@ -1408,7 +1411,7 @@ i {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(236, 240, 241, 0);
   -webkit-touch-callout: none;
 }
 .pswp__zoom-wrap {
@@ -1599,7 +1602,7 @@ Contents:
 .pswp__button--arrow--right:before {
   content: '';
   top: 35px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(236, 240, 241, 0.3);
   height: 30px;
   width: 32px;
   position: absolute;
@@ -1626,7 +1629,7 @@ Contents:
 }
 .pswp__share-modal {
   display: block;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(236, 240, 241, 0.5);
   width: 100%;
   height: 100%;
   top: 0;
@@ -1652,8 +1655,8 @@ Contents:
   display: block;
   width: auto;
   right: 44px;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 5px rgba(236, 240, 241, 0.25);
+  box-shadow: 0 2px 5px rgba(236, 240, 241, 0.25);
   -webkit-transform: translateY(6px);
   -ms-transform: translateY(6px);
   transform: translateY(6px);
@@ -1944,12 +1947,12 @@ a.pswp__share--download:hover {
 }
 .pswp__top-bar,
 .pswp__caption {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(236, 240, 241, 0.5);
 }
 /* pswp__ui--fit class is added when main image "fits" between top bar and bottom bar (caption) */
 .pswp__ui--fit .pswp__top-bar,
 .pswp__ui--fit .pswp__caption {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(236, 240, 241, 0.3);
 }
 /* pswp__ui--idle class is added when mouse isn't moving for several seconds (JS option timeToIdle) */
 .pswp__ui--idle .pswp__top-bar {
@@ -2173,7 +2176,7 @@ html.remodal-is-locked {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\78";
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   line-height: 35px;
   position: absolute;
   top: 0;
@@ -2285,12 +2288,12 @@ html.remodal-is-locked {
 
 ----------------------------------------------- */
 ::selection {
-  background: #6c9bae;
+  background: rgba(241, 196, 15, 1.0);
   color: #FFFFFF;
   text-shadow: none;
 }
 ::-moz-selection {
-  background: #6c9bae;
+  background: rgba(241, 196, 15, 1.0);
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -2298,10 +2301,10 @@ html.remodal-is-locked {
 html {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  background-color: #000000;
+  background-color: rgba(236, 240, 241, 0.95);
   font: normal 62.5%/1em 'montserratregular', sans-serif;
   height: 100%;
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
   overflow: hidden;
   line-height: 1.7;
 }
@@ -2337,17 +2340,17 @@ body main {
 8.1: Define placeholder color
 */
 :-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(44, 62, 80,0.5);
 }
 ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(44, 62, 80,0.5);
   opacity: 1;
 }
 :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(44, 62, 80,0.5);
 }
 ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(44, 62, 80,0.5);
 }
 /* 8.2: Define form class and elements belonging to .form */
 .form {
@@ -2371,7 +2374,7 @@ body main {
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   text-transform: uppercase;
   margin-top: 8px;
   display: block;
@@ -2435,8 +2438,8 @@ input[type="color"] {
   width: 100%;
   border: none;
   background: none;
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
+  border: 2px solid rgba(44, 62, 80,1.0);
   -webkit-appearance: none;
   margin: 10px 0;
 }
@@ -2478,7 +2481,7 @@ input[type="color"]:focus {
   transition: color 0.4s;
   font-size: 24px;
   font-size: 2.4rem;
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
 }
 /* 8.6: Textarea styling */
 textarea {
@@ -2497,7 +2500,7 @@ textarea {
   display: inline-block;
   -webkit-appearance: none;
   background-color: transparent;
-  border: 2px solid #6c9bae;
+  border: 2px solid rgba(241, 196, 15, 1.0);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -2518,7 +2521,7 @@ textarea {
     transition: background-color 0.3s;
   }
   .submit button:hover {
-    background-color: #6c9bae;
+    background-color: rgba(241, 196, 15, 1.0);
   }
   .submit button:hover i:before {
     color: #FFFFFF;
@@ -2531,13 +2534,13 @@ textarea {
   }
 }
 .submit i:before {
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   position: relative;
   z-index: 0;
 }
 /* 8.8: Styling of the button class (.btn) */
 .btn {
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   border: 2px solid transparent;
   display: inline-block;
   border-radius: 1.4em;
@@ -2554,14 +2557,14 @@ textarea {
   text-transform: uppercase;
 }
 .btn.active {
-  border-color: #FFFFFF;
+  border-color: rgba(44, 62, 80,1.0);
 }
 .btn.active * {
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
 }
 @media only screen and (min-width: 1025px) {
   .btn:hover {
-    color: #FFFFFF;
+    color: rgba(44, 62, 80,1.0);
   }
 }
 /* --------------------------------------------
@@ -2594,7 +2597,7 @@ figure figcaption {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(236, 240, 241,0.3);
   padding: 20px 30px;
   text-align: left;
   color: #FFFFFF;
@@ -2605,11 +2608,11 @@ figure figcaption h3 {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
 }
 figure figcaption p {
   margin: 0;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
 }
 figure figcaption i {
   display: none;
@@ -2746,7 +2749,7 @@ figure figcaption i {
 }
 @media only screen and (min-width: 1025px) {
   .strokes ul li a {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(236, 240, 241,0)
   }
   .strokes ul li a section * {
     -webkit-transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -2777,7 +2780,7 @@ figure figcaption i {
     display: block;
   }
   .strokes ul li a footer h5 {
-    color: #6c9bae;
+    color: rgba(241, 196, 15, 1.0);
     letter-spacing: 0;
   }
   .strokes ul li a footer .icon {
@@ -2791,7 +2794,7 @@ figure figcaption i {
     font-size: 4rem;
   }
   .strokes ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(236, 240, 241,0.5);
     color: #FFFFFF;
   }
   .strokes ul li a:hover section * {
@@ -2856,6 +2859,8 @@ header .logo {
   top: 50%;
   left: 50%;
   width: 120px;
+  background-color: white;
+  padding: 30px;
 }
 header .logo h1 {
   font: 0/0 a;
@@ -2934,7 +2939,10 @@ header.detail {
   height: 45vh;
 }
 header.detail * {
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
+}
+header.detail .badge {
+	color: #FFFFFF;
 }
 header.detail section {
   -webkit-transform: translate(-50%, -20%);
@@ -2961,7 +2969,7 @@ header.detail section h1 {
 }
 /* 11.2: Always show logo (also on mobile devices) */
 .always-show-logo header {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(236, 240, 241, 0.4);
   height: 10%;
 }
 .always-show-logo header .logo {
@@ -2980,7 +2988,7 @@ header.detail section h1 {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
   .always-show-logo header {
     height: 10%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(236, 240, 241, 0);
   }
 }
 .always-show-logo header.detail {
@@ -3021,7 +3029,7 @@ footer section.share h5 {
   margin: 0;
   line-height: 2;
   vertical-align: middle;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -3061,7 +3069,7 @@ footer section.share ul li a i {
 }
 footer h4,
 footer h3 {
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
 }
 /* --------------------------------------------
 
@@ -3069,7 +3077,7 @@ footer h3 {
 
 ----------------------------------------------- */
 .content-wrap {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(236, 240, 241, 0.9);
   min-height: 55vh;
 }
 /* 13.1: Styling for the content area and the top icon */
@@ -3130,8 +3138,8 @@ footer h3 {
   transition: background-color 0.3s;
 }
 .content header.with-subnav ul li:hover {
-  border-color: #6c9bae;
-  background-color: #6c9bae;
+  border-color: rgba(241, 196, 15, 1.0);
+  background-color: rgba(241, 196, 15, 1.0);
 }
 .content header.with-subnav ul li:hover * {
   color: #FFFFFF;
@@ -3170,7 +3178,7 @@ ol {
   text-align: left;
   padding-left: 25px;
   margin: 20px 0;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
 }
 ul li,
 ol li {
@@ -3179,7 +3187,7 @@ ol li {
 }
 ul li h4,
 ol li h4 {
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -3324,8 +3332,6 @@ ul.link-list li .next:before {
     font-size: 1.4rem;
   }
   ul.link-list li .next {
-    width: 4em;
-    height: 4em;
     right: 150px;
   }
 }
@@ -3347,7 +3353,7 @@ ul.link-list li .next:before {
     opacity: .2;
   }
   ul.link-list li a:hover {
-    background-color: rgba(108, 155, 174, 0.5);
+    background-color: rgba(241, 196, 15, 0.5);
   }
   ul.link-list li a:hover .next {
     right: 100px;
@@ -3381,7 +3387,7 @@ ul.icon-list li a i:before {
   font-size: 26px;
   font-size: 2.6rem;
   vertical-align: middle;
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
   margin-right: 5px;
 }
 ul.icon-list li a i.icon-social:before {
@@ -3422,13 +3428,13 @@ ul.price-list li {
   margin-bottom: 35px;
 }
 ul.price-list li .top {
-  border-bottom: 1px dashed #6c9bae;
+  border-bottom: 1px dashed rgba(241, 196, 15, 1.0);
 }
 ul.price-list li .top .title {
   font-size: 20px;
   font-size: 2rem;
   line-height: 35px;
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
   margin: 0;
   display: inline-block;
   /* Truncate string if to long (mobile only */
@@ -3455,7 +3461,7 @@ ul.price-list li .top .title {
 ul.price-list li .top .price {
   font-size: 14px;
   font-size: 1.4rem;
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
   float: right;
   margin: 0;
 }
@@ -3464,7 +3470,7 @@ ul.price-list li .description {
   font-size: 1.3rem;
   font-family: 'merriweather-italic', serif;
   text-align: left;
-  color: #FFFFFF;
+  color: rgba(127, 140, 141,1.0);
   font-weight: 700;
   margin: 15px 0;
 }
@@ -3499,7 +3505,7 @@ time strong {
   font-size: 14px;
   font-size: 1.4rem;
   font-family: 'merriweather-italic', serif;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   min-width: 110px;
   margin-right: 10px;
 }
@@ -3620,7 +3626,7 @@ main .overlay {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(52, 73, 94,0.4);
   z-index: 0;
 }
 /* --------------------------------------------
@@ -3632,7 +3638,7 @@ main .overlay {
   -webkit-transition: all 1s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: all 1s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   z-index: 40;
-  background-color: #000000;
+  background-color: rgba(236, 240, 241,0.95);
   position: fixed;
   top: 0;
   right: 0;
@@ -3657,6 +3663,7 @@ main .overlay {
   opacity: 0;
   -webkit-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
+  width: 200px;
 }
 #splash .loader img.visible {
   opacity: 1;
@@ -3664,7 +3671,7 @@ main .overlay {
 #splash .loader .line {
   width: 0;
   height: 1px;
-  background-color: #6c9bae;
+  background-color: rgba(241, 196, 15, 1.0);
   /* 17.2: The splash animation */
   -webkit-animation: fadeInAnimation 2s;
   -moz-animation: fadeInAnimation 2s;
@@ -3715,7 +3722,7 @@ main .overlay {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 50px 0 0;
-  background-color: #6c9bae;
+  background-color: rgba(241, 196, 15, 1.0);
   border-radius: 5px;
   position: relative;
   text-align: left;
@@ -3732,7 +3739,7 @@ main .overlay {
 }
 .notice h3,
 .notice p {
-  color: #FFFFFF;
+  color: rgba(44, 62, 80,1.0);
 }
 .notice h3 {
   font-size: 18px;
@@ -3740,6 +3747,7 @@ main .overlay {
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 5px;
+  text-align: center;
 }
 .notice p {
   opacity: .6;
@@ -3777,7 +3785,7 @@ main .overlay {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(236, 240, 241, 0.4);
   display: block;
   text-align: left;
 }
@@ -3804,18 +3812,18 @@ main .overlay {
   -moz-osx-font-smoothing: grayscale;
   font-size: 21px;
   font-size: 2.1rem;
-  color: #6c9bae;
+  color: rgba(241, 196, 15, 1.0);
   content: "\6d";
   vertical-align: middle;
   margin-right: 10px;
 }
 /* 18.5: Overlay helper classes */
 .overlay-dark {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(236, 240, 241, 0.9);
 }
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(236, 240, 241, 0.4);
 }
 .overlay-alt {
-  background-color: rgba(108, 155, 174, 0.5);
+  background-color: rgba(241, 196, 15, 0.5);
 }
