@@ -17,3 +17,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += [url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}, name="static")]
+    urlpatterns += [url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}, name="static")]
