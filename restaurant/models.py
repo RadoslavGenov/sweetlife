@@ -41,3 +41,14 @@ class Contact(models.Model):
 
     class Meta:
         verbose_name_plural = "Contact"
+
+
+class Story(models.Model):
+    name = models.CharField(max_length=500, blank=True)
+    date = models.CharField(max_length=250, blank=True)
+    caption = models.CharField(max_length=250, blank=True)
+    description = models.TextField(blank=True)
+    picture = models.ImageField(upload_to='images/%Y/%m/%d')
+
+    class Meta:
+        verbose_name_plural = 'Stories'

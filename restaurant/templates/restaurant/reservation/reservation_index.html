@@ -61,7 +61,8 @@
     </div>
     <script type="application/javascript">
         $(document).ready(function () {
-            $('.findTable').click(function () {
+            $('.findTable').click(function (e) {
+                e.preventDefault();
                 $seats = $('#seats').val();
                 $dateTemp = $('#date').val();
                 $timeTemp = $('#time').val();
@@ -89,4 +90,5 @@
             });
         })
     </script>
+
 {% endblock %}

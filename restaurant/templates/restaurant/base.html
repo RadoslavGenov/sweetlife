@@ -31,6 +31,8 @@
     <link rel="apple-touch-icon" sizes="152x152" href="static/img/favicons/apple-touch-icon-152x152.png">
     <link rel="icon" type="image/png" href="static/img/favicons/favicon.png" sizes="96x96">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 </body>
 
@@ -39,7 +41,7 @@
 </a>
 <div class="shader">
     <header class="detail">
-        <a href="https://lazarsg.eu/sweetlife/sweetlife-dark" class="back" data-transition="slide-from-top"
+        <a href="//sweetlifemv.com" class="back" data-transition="slide-from-top"
            style="position: fixed;left: 49.5%;">
             <h1>back</h1>
         </a>
@@ -145,11 +147,11 @@
 
 </div>
 <!-- scripts -->
-<script type="text/javascript" src="../../static/js/pack.js"></script>
+<script type="text/javascript" src="{% static "js/pack.js" %}"></script>
 <!-- end of scripts -->
 <script type="application/javascript">
     $(document).ready(function () {
-        var currentUrl = window.location.href;
+        var currentUrl = "//sweetlifemv.com";
 
         $('body').on('pageActivated', function () {
             $('.back', '#wrapper').attr('href', currentUrl);
@@ -172,6 +174,18 @@
 
     ga('create', 'UA-72227788-1', 'auto');
     ga('send', 'pageview');
+</script>
+<script>
+    $('#navigation a, .back, .with-subnav .btn a').click(function () {
+        function reload() {
+            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            if (!isChrome) {
+                window.location.reload();
+            }
+        }
+
+        window.setTimeout(reload, 100);
+    });
 </script>
 </body>
 

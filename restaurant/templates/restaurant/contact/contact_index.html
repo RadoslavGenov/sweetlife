@@ -23,25 +23,25 @@
                         </a>
                     </li>
                     <li>
-                        <a href="tel:508 696 0200">
+                        <a href="tel:{{ contacts.number }}">
                             <i class="icon icon-Phone"></i>
                             <span>{{ contacts.number }}</span>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:hal.ryerson@gmail.com">
+                        <a href="mailto:{{ contacts.email }}">
                             <i class="icon icon-Email"></i>
                             <span>{{ contacts.email }}</span>
                         </a>
                     </li>
                     <li>
-                        <a href="fb.com/The-Sweet-Life-Cafe-246711998888/">
+                        <a href="//fb.com/The-Sweet-Life-Cafe-246711998888/" target="_blank">
                             <i class="icon icon-social facebook"></i>
                             <span>{{ contacts.facebook }}</span>
                         </a>
                     </li>
                     <li>
-                        <a href="instagram.com/sweet_life_cafe_mv/">
+                        <a href="//instagram.com/sweet_life_cafe_mv/" target="_blank">
                             <i class="icon icon-social instagram"></i>
                             <span>{{ contacts.instagram }}</span>
                         </a>
@@ -59,29 +59,21 @@
                     <h2>Message</h2>
                     <h4 class="serif">We'd like to hear from you!</h4>
                 </header>
-                <form action="." method="post">
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li class="{{ message.tags }}">
+                            {{ message|safe }}
+                            <a href="#" class="close">✖</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+                <form action="." method="post" id="test">
                     {{ form.as_p }}
                     {% csrf_token %}
-                    <input type="submit" value="send e-mail">
+                    <input type="submit" class="submitBtn" value="send e-mail">
                 </form>
-                <!--<form action="contact.php" method="post" id="contact-form" class="form ambiance-html-form">
-                    <div class="row">
-                        <div class="form-group">
-                            <input name="name" type="text" placeholder="name">
-                            <i class="icon icon-User"></i>
-                        </div>
-                        <div class="form-group">
-                            <input class="full-border" name="email" id="email" type="email" placeholder="email">
-                            <i class="icon icon-Email"></i>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="10" cols="40" required="required" name="message" id="body" placeholder="message"></textarea>
-                        <i class="icon icon-Typing"></i>
-                    </div>
-                    <span class="message"><strong>Status.</strong> idle</span>
-                    <div class="submit">
-                        <button type="submit" value="submit">-->
             </section>
         </section>
     </div>

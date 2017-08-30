@@ -5802,6 +5802,7 @@ var $ = jQuery;
 				App.resizeHandler()
 			}, 100)
 		})
+		App.resizeHandler();
 	});
 	var App = {
 		transition: null,

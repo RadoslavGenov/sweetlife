@@ -24,23 +24,26 @@ SECRET_KEY = 'e_xd9a^vhe$-!q14#mpji5-@4_e@c7&x%9ufk134u$ehjr@2=x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0:5000']
+#PARENT_HOST = 'sweetlifemv.com'
+#DEFAULT_HOST = 'www'
+#DEFAULT_REDIRECT_URL = 'www.sweetlifemv.com'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'radoslavgenov5@gmail.com'
-EMAIL_HOST_PASSWORD = 'neverenough345'
+EMAIL_HOST_USER = 'server.sweetlifemv@gmail.com'
+EMAIL_HOST_PASSWORD = 'server.sweetlife'
 EMAIL_PORT = 587
 
 # Application definition
 
 INSTALLED_APPS = [
     'restaurant',
+    'django.contrib.messages',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
 

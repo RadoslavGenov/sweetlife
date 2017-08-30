@@ -2,8 +2,10 @@ from django.shortcuts import render, redirect, render_to_response
 from django.core.mail import send_mail
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib import messages
 from .forms import EmailPostForm
-from .models import AboutUs, Contact, Pic, Menu
+from .models import AboutUs, Contact, Menu, Story
+
 
 @csrf_exempt
 def index(request):
@@ -11,7 +13,7 @@ def index(request):
 
 
 def stories_index(request):
-    return render(request, "restaurant/stories/stories_index.html")
+    return render(request, "restaurant/stories/stories_index.html", {'stories': Story.objects.order_by("-pk")})
 
 
 def wines_index(request):
@@ -43,8 +45,8 @@ def contact_index(request):
         form = EmailPostForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            send_mail(cd['name'], cd['message'], cd['email'], ['radoslavgenov5@hotmail.com'])
-            return redirect('index')
+            send_mail(cd['name'], cd['message'] + "\n\n\n Name: " + cd['name'] + "\nFrom: " + cd['email'], cd['email'], ['radoslavgenov5@hotmail.com'] )
+            messages.success(request, 'email successfully sent!')
     else:
         form = EmailPostForm()
     return render(request, 'restaurant/contact/contact_index.html', {'form': form, 'contacts': contacts[0]})

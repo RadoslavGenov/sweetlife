@@ -4,7 +4,7 @@ from django.views.static import serve
 from . import views
 
 urlpatterns = [
-    url(r'^index/$', views.index, name='index'),
+    url(r'^$', views.index, name='index'),
     url(r'^stories_index/$', views.stories_index, name='stories_index'),
     url(r'^wines_index/$', views.wines_index, name='wines_index'),
     url(r'^bar_menu_index/$', views.bar_menu_index, name='bar_menu_index'),
