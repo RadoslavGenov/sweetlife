@@ -24,7 +24,7 @@ SECRET_KEY = 'e_xd9a^vhe$-!q14#mpji5-@4_e@c7&x%9ufk134u$ehjr@2=x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0:5000']
+ALLOWED_HOSTS = ['ancient-beach-27043.herokuapp.com']
 #PARENT_HOST = 'sweetlifemv.com'
 #DEFAULT_HOST = 'www'
 #DEFAULT_REDIRECT_URL = 'www.sweetlifemv.com'
@@ -127,10 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-]
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'run/static/')
 
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'run/media/')
 
