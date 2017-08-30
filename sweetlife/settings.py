@@ -25,9 +25,9 @@ SECRET_KEY = 'e_xd9a^vhe$-!q14#mpji5-@4_e@c7&x%9ufk134u$ehjr@2=x'
 DEBUG = True
 
 ALLOWED_HOSTS = ['ancient-beach-27043.herokuapp.com']
-# PARENT_HOST = 'sweetlifemv.com'
-# DEFAULT_HOST = 'www'
-# DEFAULT_REDIRECT_URL = 'www.sweetlifemv.com'
+#PARENT_HOST = 'sweetlifemv.com'
+#DEFAULT_HOST = 'www'
+#DEFAULT_REDIRECT_URL = 'www.sweetlifemv.com'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
@@ -134,17 +134,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.9/howto/static-files/
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'run/static/')
+
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'run/media/')
 
 MEDIA_URL = '/media/'
