@@ -2,6 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b42d4489-e8bd-492d-9e27-523e9e2bdbe7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/500.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/actions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/app_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/auth/user/add_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/auth/user/change_password.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/base_site.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/change_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/change_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/change_list_results.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/date_hierarchy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/delete_confirmation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/delete_selected_confirmation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/edit_inline/stacked.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/edit_inline/tabular.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/includes/fieldset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/includes/object_delete_summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/invalid_setup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/object_history.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/pagination.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/popup_response.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/prepopulated_fields_js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/related_widget_wrapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/search_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/submit_line.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/widgets/clearable_file_input.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/widgets/foreign_key_raw_id.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/widgets/many_to_many_raw_id.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/widgets/radio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/widgets/related_widget_wrapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/widgets/split_datetime.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restaurant/templates/admin/widgets/url.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sweetlife/settings.py" afterPath="$PROJECT_DIR$/sweetlife/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,12 +72,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sweetlife/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="140" column="66" lean-forward="true" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
+            <state relative-caret-position="60">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sweetlife/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#226#235#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,18 +146,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stories_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restaurant/templates/restaurant/stories/stories_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="100" lean-forward="false" selection-start-line="22" selection-start-column="100" selection-end-line="22" selection-end-column="100" />
-              <folding>
-                <element signature="e#356#361#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restaurant/templates/restaurant/base.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -142,7 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>splash</find>
       <find>storie</find>
       <find>stories/index</find>
       <find>forward</find>
@@ -172,6 +208,7 @@
       <find>ALLOW</find>
       <find>STATIC</find>
       <find>BASE</find>
+      <find>DEBUG</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -303,6 +340,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sweetlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sweetlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sweetlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sweetlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sweetlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sweetlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -697,14 +792,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/restaurant/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sweetlife/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -994,9 +1081,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sweetlife/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="140" column="66" lean-forward="true" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
+        <state relative-caret-position="60">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sweetlife/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#226#235#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
