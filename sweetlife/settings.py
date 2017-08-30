@@ -25,9 +25,9 @@ SECRET_KEY = 'e_xd9a^vhe$-!q14#mpji5-@4_e@c7&x%9ufk134u$ehjr@2=x'
 DEBUG = True
 
 ALLOWED_HOSTS = ['ancient-beach-27043.herokuapp.com']
-# PARENT_HOST = 'sweetlifemv.com'
-# DEFAULT_HOST = 'www'
-# DEFAULT_REDIRECT_URL = 'www.sweetlifemv.com'
+#PARENT_HOST = 'sweetlifemv.com'
+#DEFAULT_HOST = 'www'
+#DEFAULT_REDIRECT_URL = 'www.sweetlifemv.com'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
@@ -84,32 +84,22 @@ WSGI_APPLICATION = 'sweetlife.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-# in_heroku = False
-# if 'DATABASE_URL' in os.environ:
-#    in_heroku = True
-#
-# import dj_database_url
-#
-# if in_heroku:
-#    DATABASES = {'default': dj_database_url.config()}
-# else:
-#    DATABASES = {
-#        'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#        }
-#    }
-#
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabaseuser',
-        'PASSWORD': 'mypassword',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+in_heroku = False
+if 'DATABASE_URL' in os.environ:
+    in_heroku = True
+
+import dj_database_url
+
+if in_heroku:
+    DATABASES = {'default': dj_database_url.config()}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
